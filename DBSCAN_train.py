@@ -1,5 +1,4 @@
 # DBSCAN
-
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -8,7 +7,8 @@ from matplotlib import pyplot
 from utils import create_date, drop_smart_contract, clean_up_row, drop_missing_data
 from data_preparation import train_data_loader, data_pre_processing
 from sklearn.preprocessing import StandardScaler
-from sklearn.cluster import DBSCAN
+#from sklearn.cluster import DBSCAN
+from dbscan import DBSCAN
 
 import networkx as nx
 import operator
@@ -45,7 +45,13 @@ ytrain.set_index('dates', inplace=True)
 
 ## Fit the DBSCAN
 
-clustering = DBSCAN().fit(Xtrain)
+X = StandardScaler().fit_transform(Xtrain)
+# OR calling our sklearn API:
+labels, core_samples_mask = DBSCAN(X,eps=0.3, min_samples=50)
 
-labels = pd.Series(clustering.labels_)
-labels.to_csv('DBSCAN_labels.csv')
+df_labels = pd.DataFrame(labels)
+
+df_core_samples_mask = pd.DataFrame(core_samples_mask)
+
+df_labels.to_csv('dbscan_labels.csv')
+df_core_samples_mask.to_csv('core_sample_mask.csv')

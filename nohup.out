@@ -1,0 +1,556 @@
+Creating experiment folders..
+Loading train data..
+Traceback (most recent call last):
+  File "/home/erika/eth_fraud_detection/lpc_ad_main.py", line 25, in <module>
+    with open(train_data_path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'OmniAnomaly-master\\processed\\machine-1-2_train.pkl'
+/home/erika/eth_fraud_detection/data_preparation.py:16: DtypeWarning: Columns (6) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170702 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170702.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:21: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170707 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170707.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:22: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170708 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170708.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:23: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170709 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170709.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:24: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170710 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170710.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:28: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170714 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170714.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:30: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170716 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170716.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:31: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170717 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170717.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:32: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170718 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170718.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:33: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170719 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170719.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:34: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170720 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170720.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:35: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170721 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170721.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:36: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170722 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170722.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:37: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170723 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170723.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:38: DtypeWarning: Columns (5,11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170724 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170724.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:41: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170727 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170727.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:43: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170729 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170729.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:44: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170730 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170730.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:45: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170731 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170731.csv")
+/home/erika/eth_fraud_detection/utils.py:40: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_drop.drop(columns=['check_hash'], inplace=True)
+/home/erika/eth_fraud_detection/utils.py:51: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_no_missing_date.drop(['receipt_status', 'max_fee_per_gas', 'max_priority_fee_per_gas', 'transaction_type','receipt_contract_address'],axis=1,inplace=True)
+/home/erika/eth_fraud_detection/utils.py:6: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['block_timestamp_str'] = data_nodup['block_timestamp'].astype(str)
+/home/erika/eth_fraud_detection/utils.py:7: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['date'] = data_nodup['block_timestamp_str'].str.slice(start=0,stop=10)
+/home/erika/eth_fraud_detection/utils.py:9: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['dates'] = pd.to_datetime(data_nodup['date'], format='%Y-%m-%d')
+/home/erika/eth_fraud_detection/utils.py:11: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['year'] = data_nodup['block_timestamp_str'].str.slice(start=0,stop=4)
+/home/erika/eth_fraud_detection/utils.py:14: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['month'] = data_nodup['block_timestamp_str'].str.slice(start=5,stop=7)
+/home/erika/eth_fraud_detection/utils.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['month'] = pd.to_numeric(data_nodup['month'])
+/home/erika/eth_fraud_detection/utils.py:17: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['day'] = data_nodup['block_timestamp_str'].str.slice(start=8,stop=10)
+/home/erika/eth_fraud_detection/utils.py:18: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['day'] = pd.to_numeric(data_nodup['day'])
+/home/erika/eth_fraud_detection/utils.py:20: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup.sort_values(by=['dates'],ascending=False, inplace=True)
+/home/erika/eth_fraud_detection/data_preparation.py:99: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['gas'] = data['gas'].astype('float')
+/home/erika/eth_fraud_detection/data_preparation.py:100: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['value'] = data['value'].astype('float')
+/home/erika/eth_fraud_detection/data_preparation.py:106: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['gas_price_unit'] = data['gas_price']/data['gas']
+/home/erika/eth_fraud_detection/data_preparation.py:109: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['value_div_gas'] = data['value']/data['gas']
+/home/erika/eth_fraud_detection/data_preparation.py:114: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['from_address_count'] = data.groupby('from_address')['from_address'].transform('count')
+/home/erika/eth_fraud_detection/data_preparation.py:116: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['to_address_count'] = data.groupby('to_address')['to_address'].transform('count')
+/home/erika/eth_fraud_detection/data_preparation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['block_count'] = data.groupby('block_number')['block_number'].transform('count')
+/home/erika/eth_fraud_detection/data_preparation.py:66: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_09092017 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_09092017.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:68: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_11092017 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_11092017.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:69: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_12092017 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_12092017.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:70: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_13092017 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_13092017.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:71: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_14092017 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_14092017.csv")
+/home/erika/eth_fraud_detection/utils.py:40: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_drop.drop(columns=['check_hash'], inplace=True)
+/home/erika/eth_fraud_detection/utils.py:51: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_no_missing_date.drop(['receipt_status', 'max_fee_per_gas', 'max_priority_fee_per_gas', 'transaction_type','receipt_contract_address'],axis=1,inplace=True)
+/home/erika/eth_fraud_detection/utils.py:6: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['block_timestamp_str'] = data_nodup['block_timestamp'].astype(str)
+/home/erika/eth_fraud_detection/utils.py:7: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['date'] = data_nodup['block_timestamp_str'].str.slice(start=0,stop=10)
+/home/erika/eth_fraud_detection/utils.py:9: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['dates'] = pd.to_datetime(data_nodup['date'], format='%Y-%m-%d')
+/home/erika/eth_fraud_detection/utils.py:11: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['year'] = data_nodup['block_timestamp_str'].str.slice(start=0,stop=4)
+/home/erika/eth_fraud_detection/utils.py:14: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['month'] = data_nodup['block_timestamp_str'].str.slice(start=5,stop=7)
+/home/erika/eth_fraud_detection/utils.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['month'] = pd.to_numeric(data_nodup['month'])
+/home/erika/eth_fraud_detection/utils.py:17: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['day'] = data_nodup['block_timestamp_str'].str.slice(start=8,stop=10)
+/home/erika/eth_fraud_detection/utils.py:18: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['day'] = pd.to_numeric(data_nodup['day'])
+/home/erika/eth_fraud_detection/utils.py:20: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup.sort_values(by=['dates'],ascending=False, inplace=True)
+/home/erika/eth_fraud_detection/data_preparation.py:99: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['gas'] = data['gas'].astype('float')
+/home/erika/eth_fraud_detection/data_preparation.py:100: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['value'] = data['value'].astype('float')
+/home/erika/eth_fraud_detection/data_preparation.py:106: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['gas_price_unit'] = data['gas_price']/data['gas']
+/home/erika/eth_fraud_detection/data_preparation.py:109: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['value_div_gas'] = data['value']/data['gas']
+/home/erika/eth_fraud_detection/data_preparation.py:114: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['from_address_count'] = data.groupby('from_address')['from_address'].transform('count')
+/home/erika/eth_fraud_detection/data_preparation.py:116: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['to_address_count'] = data.groupby('to_address')['to_address'].transform('count')
+/home/erika/eth_fraud_detection/data_preparation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['block_count'] = data.groupby('block_number')['block_number'].transform('count')
+Creating experiment folders..
+Loading train data..
+Traceback (most recent call last):
+  File "/home/erika/eth_fraud_detection/lpc_ad_main.py", line 67, in <module>
+    with open(os.path.join(folder_path,'config_dict.pickle'), 'wb') as handle:
+FileNotFoundError: [Errno 2] No such file or directory: 'experiments/25_07_2023___21_06/config_dict.pickle'
+/home/erika/eth_fraud_detection/data_preparation.py:16: DtypeWarning: Columns (6) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170702 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170702.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:21: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170707 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170707.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:22: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170708 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170708.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:23: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170709 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170709.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:24: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170710 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170710.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:28: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170714 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170714.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:30: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170716 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170716.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:31: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170717 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170717.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:32: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170718 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170718.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:33: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170719 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170719.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:34: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170720 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170720.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:35: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170721 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170721.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:36: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170722 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170722.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:37: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170723 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170723.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:38: DtypeWarning: Columns (5,11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170724 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170724.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:41: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170727 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170727.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:43: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170729 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170729.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:44: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170730 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170730.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:45: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170731 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170731.csv")
+/home/erika/eth_fraud_detection/utils.py:40: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_drop.drop(columns=['check_hash'], inplace=True)
+/home/erika/eth_fraud_detection/utils.py:51: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_no_missing_date.drop(['receipt_status', 'max_fee_per_gas', 'max_priority_fee_per_gas', 'transaction_type','receipt_contract_address'],axis=1,inplace=True)
+/home/erika/eth_fraud_detection/utils.py:6: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['block_timestamp_str'] = data_nodup['block_timestamp'].astype(str)
+/home/erika/eth_fraud_detection/utils.py:7: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['date'] = data_nodup['block_timestamp_str'].str.slice(start=0,stop=10)
+/home/erika/eth_fraud_detection/utils.py:9: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['dates'] = pd.to_datetime(data_nodup['date'], format='%Y-%m-%d')
+/home/erika/eth_fraud_detection/utils.py:11: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['year'] = data_nodup['block_timestamp_str'].str.slice(start=0,stop=4)
+/home/erika/eth_fraud_detection/utils.py:14: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['month'] = data_nodup['block_timestamp_str'].str.slice(start=5,stop=7)
+/home/erika/eth_fraud_detection/utils.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['month'] = pd.to_numeric(data_nodup['month'])
+/home/erika/eth_fraud_detection/utils.py:17: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['day'] = data_nodup['block_timestamp_str'].str.slice(start=8,stop=10)
+/home/erika/eth_fraud_detection/utils.py:18: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['day'] = pd.to_numeric(data_nodup['day'])
+/home/erika/eth_fraud_detection/utils.py:20: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup.sort_values(by=['dates'],ascending=False, inplace=True)
+/home/erika/eth_fraud_detection/data_preparation.py:99: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['gas'] = data['gas'].astype('float')
+/home/erika/eth_fraud_detection/data_preparation.py:100: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['value'] = data['value'].astype('float')
+/home/erika/eth_fraud_detection/data_preparation.py:106: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['gas_price_unit'] = data['gas_price']/data['gas']
+/home/erika/eth_fraud_detection/data_preparation.py:109: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['value_div_gas'] = data['value']/data['gas']
+/home/erika/eth_fraud_detection/data_preparation.py:114: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['from_address_count'] = data.groupby('from_address')['from_address'].transform('count')
+/home/erika/eth_fraud_detection/data_preparation.py:116: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['to_address_count'] = data.groupby('to_address')['to_address'].transform('count')
+/home/erika/eth_fraud_detection/data_preparation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['block_count'] = data.groupby('block_number')['block_number'].transform('count')
+/home/erika/eth_fraud_detection/data_preparation.py:16: DtypeWarning: Columns (6) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170702 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170702.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:21: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170707 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170707.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:22: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170708 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170708.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:23: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170709 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170709.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:24: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170710 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170710.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:28: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170714 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170714.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:30: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170716 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170716.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:31: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170717 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170717.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:32: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170718 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170718.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:33: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170719 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170719.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:34: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170720 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170720.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:35: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170721 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170721.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:36: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170722 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170722.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:37: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170723 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170723.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:38: DtypeWarning: Columns (5,11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170724 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170724.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:41: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170727 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170727.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:43: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170729 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170729.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:44: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170730 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170730.csv")
+/home/erika/eth_fraud_detection/data_preparation.py:45: DtypeWarning: Columns (11) have mixed types. Specify dtype option on import or set low_memory=False.
+  eth_20170731 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170731.csv")
+/home/erika/eth_fraud_detection/utils.py:40: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_drop.drop(columns=['check_hash'], inplace=True)
+/home/erika/eth_fraud_detection/utils.py:51: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_no_missing_date.drop(['receipt_status', 'max_fee_per_gas', 'max_priority_fee_per_gas', 'transaction_type','receipt_contract_address'],axis=1,inplace=True)
+/home/erika/eth_fraud_detection/utils.py:6: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['block_timestamp_str'] = data_nodup['block_timestamp'].astype(str)
+/home/erika/eth_fraud_detection/utils.py:7: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['date'] = data_nodup['block_timestamp_str'].str.slice(start=0,stop=10)
+/home/erika/eth_fraud_detection/utils.py:9: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['dates'] = pd.to_datetime(data_nodup['date'], format='%Y-%m-%d')
+/home/erika/eth_fraud_detection/utils.py:11: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['year'] = data_nodup['block_timestamp_str'].str.slice(start=0,stop=4)
+/home/erika/eth_fraud_detection/utils.py:14: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['month'] = data_nodup['block_timestamp_str'].str.slice(start=5,stop=7)
+/home/erika/eth_fraud_detection/utils.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['month'] = pd.to_numeric(data_nodup['month'])
+/home/erika/eth_fraud_detection/utils.py:17: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['day'] = data_nodup['block_timestamp_str'].str.slice(start=8,stop=10)
+/home/erika/eth_fraud_detection/utils.py:18: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup['day'] = pd.to_numeric(data_nodup['day'])
+/home/erika/eth_fraud_detection/utils.py:20: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data_nodup.sort_values(by=['dates'],ascending=False, inplace=True)
+/home/erika/eth_fraud_detection/data_preparation.py:99: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['gas'] = data['gas'].astype('float')
+/home/erika/eth_fraud_detection/data_preparation.py:100: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['value'] = data['value'].astype('float')
+/home/erika/eth_fraud_detection/data_preparation.py:106: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['gas_price_unit'] = data['gas_price']/data['gas']
+/home/erika/eth_fraud_detection/data_preparation.py:109: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['value_div_gas'] = data['value']/data['gas']
+/home/erika/eth_fraud_detection/data_preparation.py:114: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['from_address_count'] = data.groupby('from_address')['from_address'].transform('count')
+/home/erika/eth_fraud_detection/data_preparation.py:116: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['to_address_count'] = data.groupby('to_address')['to_address'].transform('count')
+/home/erika/eth_fraud_detection/data_preparation.py:119: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  data['block_count'] = data.groupby('block_number')['block_number'].transform('count')

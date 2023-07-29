@@ -2,6 +2,7 @@ from matplotlib import pyplot as plt
 from lpc_ad_libs import *
 from lpc_ad_model import *
 from  torch.utils.data import DataLoader
+from data_preparation import *
 from datetime import datetime
 import os
  
@@ -21,16 +22,34 @@ os.makedirs( os.path.join(folder_path,"state_dict","predictor"), exist_ok=True)
 
  
 print("Loading train data..")
-train_data_path =  "OmniAnomaly-master\processed\machine-1-2_train.pkl"
-with open(train_data_path, "rb") as f:
-    train_data =  torch.from_numpy(pickle.load(f))
- 
+#train_data_path =  "OmniAnomaly-master\processed\machine-1-2_train.pkl"
+#with open(train_data_path, "rb") as f:
+#    train_data =  torch.from_numpy(pickle.load(f))
 
-print("Loading test data..")
-test_data_path =  "OmniAnomaly-master\processed\machine-1-2_test.pkl"
-with open(test_data_path, "rb") as f:
-    test_data =  torch.from_numpy(pickle.load(f))
+train_data_df = train_data_loader()
+df_train = data_pre_processing(train_data_df)
+df_train_  = df_train [['nonce', 'transaction_index',
+       'value', 'gas', 'gas_price', 'receipt_cumulative_gas_used',
+       'receipt_gas_used', 'block_number','receipt_effective_gas_price', 
+       'dates', 'gas_price_unit','value_div_gas', 'from_address_count', 'to_address_count',
+       'block_count', 'degree_centrality_from', 'degree_centrality_to',
+       'in_degree_adr_to', 'out_degree_adr_to', 'in_degree_adr_from','out_degree_adr_from']]
 
+df_train_np = df_train_.to_numpy(dtype='float32', na_value=np.nan)
+train_data = torch.from_numpy(df_train_np)
+
+
+test_data_df = test_data_loader()
+df_test = data_pre_processing(train_data_df)
+df_test_ = df_test [['nonce', 'transaction_index',
+       'value', 'gas', 'gas_price', 'receipt_cumulative_gas_used',
+       'receipt_gas_used', 'block_number','receipt_effective_gas_price', 
+       'dates', 'gas_price_unit','value_div_gas', 'from_address_count', 'to_address_count',
+       'block_count', 'degree_centrality_from', 'degree_centrality_to',
+       'in_degree_adr_to', 'out_degree_adr_to', 'in_degree_adr_from','out_degree_adr_from']]
+
+df_test_np = df_test_.to_numpy(dtype='float32', na_value=np.nan)
+test_data = torch.from_numpy(df_test_np)
  
 
 #M feature dimensione
