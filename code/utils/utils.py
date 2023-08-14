@@ -64,13 +64,51 @@ def drop_missing_data(data):
 
 
 def train_data_loader():
-    
+       
     eth_20170701 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170701.csv")
     eth_20170702 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170702.csv")
     eth_20170703 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170703.csv")
+    eth_20170704 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170704.csv")
+    eth_20170705 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170705.csv")
+    eth_20170706 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170706.csv")
+    eth_20170707 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170707.csv")
+    eth_20170708 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170708.csv")
+    eth_20170709 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170709.csv")
+    eth_20170710 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170710.csv")
+    eth_20170711 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170711.csv")
+    eth_20170712 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170712.csv")
+    eth_20170713 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170713.csv")
+    eth_20170714 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170714.csv")
+    eth_20170715 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170715.csv")
+    eth_20170716 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170716.csv")
+    eth_20170717 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170717.csv")
+    eth_20170718 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170718.csv")
+    eth_20170719 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170719.csv")
+    eth_20170720 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170720.csv")
+    eth_20170721 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170721.csv")
+    eth_20170722 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170722.csv")
+    eth_20170723 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170723.csv")
+    eth_20170724 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170724.csv")
+    eth_20170725 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170725.csv")
+    eth_20170726 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170726.csv")
+    eth_20170727 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170727.csv")
+    eth_20170728 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170728.csv")
+    eth_20170729 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170729.csv")
+    eth_20170730 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170730.csv")
+    eth_20170731 = pd.read_csv("https://s3.eu-central-2.wasabisys.com/ethblockchain/eth_trans_20170731.csv")
 
-
-    data = pd.concat([eth_20170701,eth_20170702,eth_20170703])
+    data = pd.concat([eth_20170701,eth_20170702,eth_20170703,
+                            eth_20170704,eth_20170705,eth_20170706,
+                            eth_20170707,eth_20170708, eth_20170709, 
+                            eth_20170710,eth_20170711,eth_20170712, eth_20170713,
+                            eth_20170714,eth_20170715,eth_20170716, eth_20170717,
+                            eth_20170718,eth_20170719,eth_20170720, eth_20170721,
+                            eth_20170722,eth_20170723,
+                            eth_20170724, 
+                            eth_20170725,
+                            eth_20170726,eth_20170727,eth_20170728, 
+                            eth_20170729,
+                            eth_20170730, eth_20170731])
     return data
 
 def test_data_loader():

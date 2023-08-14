@@ -60,3 +60,13 @@ for k, col in zip(unique_labels, colors):
 print(type(core_samples_mask), type(class_member_mask),  type(labels))
 plt.title('Estimated number of clusters: %d' % n_clusters_)
 plt.savefig('example-dbscan-output')
+
+from sklearn.metrics import silhouette_score, normalized_mutual_info_score, jaccard_score
+silhouette_avg = silhouette_score(X, labels)
+print(silhouette_avg)
+
+ytrain = range(0,len(df_labels))
+jaccard_similarity = jaccard_score(ytrain, df_labels, average='micro')
+print(jaccard_similarity)
+nmi = normalized_mutual_info_score(ytrain, np.ravel(df_labels))
+print(nmi)
