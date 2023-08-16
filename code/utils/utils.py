@@ -213,7 +213,7 @@ def data_pre_processing(data):
 
     ## Add labels : malicious addresses
 
-    darklist = pd.read_csv('darklist.csv',index_col=False, usecols=["address", "comment", "date;"])
+    darklist = pd.read_csv('../darklist.csv',index_col=False, usecols=["address", "comment", "date;"])
 
     # Merge malicoous addresses on the 'from_address'
     df = df.merge(darklist, how='left', left_on='from_address', right_on='address')
@@ -246,7 +246,7 @@ def data_pre_processing(data):
 
     return df
 
-def create_train_test(data):
+def create_X_y(data):
     
     # drop traget feature variables (except the anomalous flag)
     data_X_y = data.drop(['comment_from_address_darklst','date_mal_trans_from', 'mal_trans_from', 'comment_to_address_darklst',
