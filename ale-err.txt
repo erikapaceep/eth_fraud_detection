@@ -1,5 +1,0 @@
-nohup: ignoring input
-  File "code/DBSCAN_train.py", line 49
-    df_labels.to_csv(f'output/dbscan_out/dbscan_labels_{e}_{n}.csv')
-                                                                  ^
-SyntaxError: invalid syntax
