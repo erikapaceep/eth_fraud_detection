@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+data/pre_processing_data
+experiments/
+output/*
+output/dbscan_out/
+output/logistic_out/
+output/NN_out/
+data/pre_processing_data/
+number_trans_day.csv
+data_preparation_local.py
+experiments/*
